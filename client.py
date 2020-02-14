@@ -22,4 +22,4 @@ response = runtime.invoke_endpoint(EndpointName=ENDPOINT_NAME,
 # print(response)
 
 result = json.loads(response['Body'].read().decode())
-print(result, '\tactual: ', actual['data'])
+print('prediction: ', result['predictions'][0]['score'], '\t\tactual: ', str(actual['data']))
