@@ -8,11 +8,11 @@ ENDPOINT_NAME = 'bikeshare-sagemaker-regression-v1'
 runtime= boto3.client('runtime.sagemaker')
 
 # Convert categorical date field
-observation = "3,2011-01-03,1,0,1,0,1,1,1,0.196364,0.189405,0.437273,0.248309,120,1229"
+observation = "231,2011-08-19,3,0,8,0,5,1,2,0.685,0.633221,0.722917,0.139308,797,3356"
 observation = observation.replace("-","")
 
 data = {"data":observation}
-actual = {"data":"1349"}
+actual = {"data":"4153"}
 payload = data['data']
 # print(payload)
 
