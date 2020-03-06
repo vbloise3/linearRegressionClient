@@ -6,6 +6,6 @@ with open('USCensus1990.data.csv', "rt", encoding='utf8') as inp, open('new.csv'
         if counter % 2 == 0:
             writer.writerow(row)
         counter = counter + 1
-        print(counter)
+        print(counter) 
 os.remove('USCensus1990.data.csv')
 os.rename('new.csv', 'USCensus1990.data.csv')
